@@ -10,7 +10,7 @@ class TailwindServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $tailwindPublicPath = public_path('vendor/nova-tailwind');
+        $tailwindPublicPath = public_path('assets/vendor/nova-tailwind');
 
         if (file_exists("{$tailwindPublicPath}/tailwind.css")) {
             Nova::theme('/vendor/nova-tailwind/tailwind.css');
